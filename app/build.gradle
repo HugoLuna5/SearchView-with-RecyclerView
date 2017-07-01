@@ -5,7 +5,7 @@ android {
     buildToolsVersion "26.0.0"
     defaultConfig {
         applicationId "org.lunainc.recyclerview"
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -36,6 +36,14 @@ dependencies {
     //glide
     compile 'com.github.bumptech.glide:glide:3.6.1'
 
+    compile project(':DateTimeUtils')
+    //biblioteca squareup
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'com.squareup.okhttp:okhttp:1.1.0'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
 
+    // EventBus
+    compile 'org.greenrobot:eventbus:3.0.0'
 
 }

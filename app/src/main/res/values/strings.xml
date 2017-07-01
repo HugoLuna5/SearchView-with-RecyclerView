@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">RecyclerView</string>
+
+    <string name="list_detail_image_transition">list_detail_image_transition</string>
+    <string name="list_detail_title_transition">list_detail_title_transition</string>
+    <string name="list_detail_card_transition">list_detail_card_transition</string>
 </resources>
