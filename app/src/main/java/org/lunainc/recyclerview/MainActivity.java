@@ -193,11 +193,7 @@ public class MainActivity extends AppCompatActivity {
             long now = System.currentTimeMillis();
 
 
-            /*DateUtils.getRelativeDateTimeString(_mActivity,
-                    Long.parseLong(mFilteredList.get(i).getPublished_date()),
-                    DateUtils.DAY_IN_MILLIS,
-                    DateUtils.WEEK_IN_MILLIS,
-                    DateUtils.FORMAT_SHOW_YEAR)*/
+
 
             viewHolder.fecha.setText(DateTimeUtils.formatWithStyle(mFilteredList.get(i).getPublished_date(), DateTimeStyle.LONG));
             viewHolder.autor.setText(mFilteredList.get(i).getAuthor());
@@ -280,21 +276,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View view) {
 
                         Toast.makeText(itemView.getContext(), " " +mFilteredList.get(getAdapterPosition()).getTitle() , Toast.LENGTH_SHORT).show();
-                       /* Intent intent = new Intent(itemView.getContext(),ActivityMostrarHome.class);
-                        intent.putExtra("titulo",mFilteredList.get(getAdapterPosition()).getTitle());
-                        intent.putExtra("url",mFilteredList.get(getAdapterPosition()).getUrl());
-                        intent.putExtra("photo",mFilteredList.get(getAdapterPosition()).getPhoto());
-                        intent.putExtra("autor",mFilteredList.get(getAdapterPosition()).getAuthor());
-                        intent.putExtra("fecha",mFilteredList.get(getAdapterPosition()).getPublished_date());
-                        intent.putExtra("body",mFilteredList.get(getAdapterPosition()).getBody());
-
-                        Pair<View, String> elem1 = Pair.create((View) thumbnailView, getString(R.string.list_detail_image_transition));
-
-                        ActivityOptionsCompat options = ActivityOptionsCompat.
-                                makeSceneTransitionAnimation(getActivity(), elem1);
-
-
-                        itemView.getContext().startActivity(intent, options.toBundle());*/
+                     
 
                     }
                 });
